@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klasifikasi Lemari</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <p class="navbar-brand" style="position: relative;
+   width: 100%;
+   color : white;
+   left: 0;
+   font-size: 30px;
+   text-align: center;
+   margin: auto;">SISTEM PENGKLASIFIKASIAN KERAPIAN LEMARI</p>
+   <p style="position: relative;
+   width: 100%;
+   font-size: 17px;
+   color : white;
+   left: 0;
+   text-align: center;
+   margin: auto;">TUGAS AKHIR KELOMPOK 03 DIPLOMA TEKNOLOGI INFORMASI 2019</p>
+   <br>
+                  
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+
+</html>
